@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    background-color: #a0d2eb;
+}
+
+#root {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a28089;
+    border-radius: 200px;
+}
+
+.block {
+    height: 450px;
+    width: 1000px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+}
+h1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.leftBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(button/okey.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    transform: scaleX(-1);
+}
+
+.rightBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(button/okey.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.leftBtn:hover {
+    background-image: url(button/left-right.png);
+    cursor: pointer;
+}
+
+.rightBtn:hover {
+    background-image: url(button/left-right.png);
+    cursor: pointer;
+}
+
+.points {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 2px;
+    transition: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.point.active {
+    height: 20px;
+    width: 50px;
+    border: 1px solid #8470ff;
+    background-color: #87cefa;
+    transition: 0.3s;
+}
